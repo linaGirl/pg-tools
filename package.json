@@ -19,8 +19,7 @@
         "ee-class": "1.0.x",
         "ee-event-emitter": "0.1.x",
         "ee-types": "0.1.x",
-        "ee-log": "0.3.x",
-        "shelljs": "~0.4.0"
+        "ee-log": "0.3.x"
     },
     "devDependencies": {
         "mocha": "1.17.x"
