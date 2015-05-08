@@ -27,7 +27,7 @@
   },
   "optionalDependencies": {},
   "keywords": [],
-  "private": true,
+  "private": false,
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha --reporter spec"
   }
