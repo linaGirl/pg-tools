@@ -25,12 +25,13 @@ Create postgres database dump and restore
         , password: 'postgres'
         , dumpPath: 'home/backup'
         , database: 'test'
-    }, function (error, output, message) {
+    }, function (error, output, message, dumpFileName) {
         if (error instanceof Error) {
            console.log(code);
         } else {
            console.log(output);
            console.log(message);
+           console.log(dumpFileName);
         }
     });
     // restore dump sql file to database
