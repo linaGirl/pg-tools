@@ -17,7 +17,7 @@ describe('Create dump sql file', function () {
             , database: 'arunav'
         }, function (error, output, message, dumpFileName) {
             if (error instanceof Error) {
-                console.log(code);
+                console.log(error);
             } else {
                 console.log(output);
                 console.log(message);
@@ -40,7 +40,7 @@ describe('Restore dump sql file to database', function () {
             , database: 'test'
         }, function (error, output, message) {
             if (error instanceof Error) {
-                console.log(code);
+                console.log(error);
             } else {
                 console.log(output);
                 console.log(message);
