@@ -12,9 +12,9 @@ describe('Create dump sql file', function () {
             host: 'localhost'
             , port: 5432
             , user: 'postgres'
-            , password: ''
-            , dumpPath: '../'
-            , database: 'postgres'
+            , password: 'navalarti'
+            , dumpPath: __dirname+'/..'
+            , database: 'arunav'
         }, function (error, output, message, dumpFileName) {
             if (error instanceof Error) {
                 console.log(error);
@@ -29,7 +29,7 @@ describe('Create dump sql file', function () {
                             host: 'localhost'
                             , port: 5432
                             , user: 'postgres'
-                            , password: ''
+                            , password: 'navalarti'
                             , sqlFilePath: dumpFileName
                             , database: 'test'
                         }, function (error, output, message) {
