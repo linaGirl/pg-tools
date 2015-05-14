@@ -16,11 +16,13 @@
     "url": "https://github.com/eventEmitter/pg-tools/issues"
   },
   "dependencies": {
+    "async-method": "~0.1.1",
     "ee-class": "1.0.x",
     "ee-event-emitter": "0.1.x",
-    "ee-types": "0.1.x",
     "ee-log": "0.3.x",
-    "async-method": "~0.1.1"
+    "ee-types": "0.1.x",
+    "es6-promise": "^2.1.1",
+    "install": "^0.1.8"
   },
   "devDependencies": {
     "mocha": "1.17.x"
