@@ -29,7 +29,7 @@ describe('Pg Tools', function () {
             host: 'localhost'
             , port: 5432
             , user: 'postgres'
-            , password: 'navalarti'
+            , password: ''
             , sqlFilePath: dumpSqlFileName
             , database: 'test'
         }, function (error, output, message) {
