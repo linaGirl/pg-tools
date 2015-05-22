@@ -8,7 +8,7 @@ var Class = require('ee-class')
         , PgTools = require('../');
 
 describe('Pg Tools', function () {
-    var dumpSqlFileName = '';
+    var dumpSqlFileName = os.tmpdir()+'/dumppostgres'+new Date().getTime()+'.sql';
     it('Should create dump sql file', function () {
         var tool = new PgTools();
         tool.dumpDatabase({
@@ -16,12 +16,11 @@ describe('Pg Tools', function () {
             , port: 5432
             , user: 'postgres'
             , password: ''
-            , dumpPath: os.tmpdir()
+            , dumpPath: dumpSqlFileName
             , database: 'postgres'
         }).then(function (error, output, message, dumpFileName) {
-            dumpSqlFileName = dumpFileName;
-
-        });
+            
+});
     });
 
     it('Should restore dump sql file', function () {
@@ -30,7 +29,7 @@ describe('Pg Tools', function () {
             host: 'localhost'
             , port: 5432
             , user: 'postgres'
-            , password: ''
+            , password: 'navalarti'
             , sqlFilePath: dumpSqlFileName
             , database: 'test'
         }, function (error, output, message) {
