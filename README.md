@@ -1,5 +1,7 @@
 # pg-tools
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/eventEmitter/pg-tools.svg)](https://greenkeeper.io/)
+
 Create postgres database dump and restore
 
 
