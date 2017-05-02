@@ -17,15 +17,15 @@
   },
   "dependencies": {
     "async-method": "~0.1.1",
-    "ee-class": "1.0.x",
-    "ee-event-emitter": "0.1.x",
-    "ee-log": "0.3.x",
-    "ee-types": "0.1.x",
-    "es6-promise": "^2.1.1",
-    "install": "^0.1.8"
+    "ee-class": "~1.4.0",
+    "ee-event-emitter": "~1.0.1",
+    "ee-log": "~2.0.2",
+    "ee-types": "~2.1.2",
+    "es6-promise": "^4.1.0",
+    "install": "^0.9.5"
   },
   "devDependencies": {
-    "mocha": "1.17.x"
+    "mocha": "~3.3.0"
   },
   "optionalDependencies": {},
   "keywords": [],
